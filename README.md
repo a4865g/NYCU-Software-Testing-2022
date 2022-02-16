@@ -12,4 +12,5 @@
    - 黃世昆 Shih-Kun Huang - skhuang[at]cs.nctu.edu.tw
 - Teaching Assistant
    - 吳偉誠 Wei-Cheng Wu - wulearn.cs09[at]nycu.edu.tw
+   - 曾思維 Szu-Wei Tseng - a13579and2468.cs10[at]nycu.edu.tw
 - [Facebook Group](https://www.facebook.com/groups/softwaretesting.nycu)
