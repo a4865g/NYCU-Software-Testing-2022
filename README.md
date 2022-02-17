@@ -9,7 +9,7 @@
 
 ## Contact
 - Instructor
-   - 黃世昆 Shih-Kun Huang - skhuang[at]cs.nctu.edu.tw
+   - 黃世昆 Shih-Kun Huang - skhuang[at]nycu.edu.tw
 - Teaching Assistant
    - 吳偉誠 Wei-Cheng Wu - wulearn.cs09[at]nycu.edu.tw
    - 曾思維 Szu-Wei Tseng - a13579and2468.cs10[at]nycu.edu.tw
