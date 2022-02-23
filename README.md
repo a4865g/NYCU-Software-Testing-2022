@@ -6,6 +6,7 @@
 
 ## Lab
 0. [Overview](https://docs.google.com/presentation/d/10VCs6CK5rFEoDUkTcywiYNtI99tl83p6YqJ0nwiX1pw/edit?usp=sharing)
+1. [Basic Unit Testing](https://docs.google.com/presentation/d/1Z8DachhAxVFpnsYUW6IKm7Ir0a5qx6y18is1HR0ASCk/edit?usp=sharing)
 
 ## Contact
 - Instructor
