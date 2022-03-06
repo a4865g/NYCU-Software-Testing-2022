@@ -9,6 +9,7 @@ import org.mockito.Mock;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
@@ -33,14 +34,6 @@ class StrangeGameTest {
                 {new Player(playerId, 1), 24, "Have a nice day!"},
                 {new Player(), 24, "After a long period of punishment, the player can leave! :)"}
         });
-    }
-
-    public static Collection inputCToPrison() {
-        return Arrays.asList(
-                new Player(playerId + "-1", -1),
-                new Player(playerId + "-2", -1),
-                new Player(playerId + "-3", -1)
-        );
     }
 
     public static Collection inputEDonate() {
@@ -72,14 +65,16 @@ class StrangeGameTest {
         assertEquals(eReturn, strangeGame.enterGame(iPlayer));
     }
 
-    @ParameterizedTest
-    @MethodSource("inputCToPrison")
-    void testCToPrison(Player iPlayer) throws InterruptedException {
-        doNothing().when(prison).imprisonment(iPlayer);
-        prison.crime(iPlayer);
-        assertEquals(iPlayer.getPlayerId(), prison.getLog().remove(0));
-        verify(prison, times(1)).crime(iPlayer);
-        verify(prison, times(1)).getLog();
+    @Test
+    void testCToPrison() throws InterruptedException {
+        ArrayList<String> playersIds = new ArrayList<String>(Arrays.asList(playerId + "-1", playerId + "-2", playerId + "-3"));
+        for (String playerId : playersIds) {
+            Player player = new Player(playerId, -1);
+            doNothing().when(prison).imprisonment(player);
+            prison.crime(player);
+            verify(prison, times(1)).crime(player);
+        }
+        assertEquals(playersIds, prison.getLog());
     }
 
     @Test
