@@ -1,10 +1,10 @@
 package tw.edu.nycu.cs.softwaretesting.spring2022;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -24,8 +24,9 @@ class StrangeGameTest {
     GAMEDb gameDb;
     @Spy
     Prison prison; // 目的為干擾內部的行為，否則會真的 sleep 7 天
-    @InjectMocks
-    private StrangeGame strangeGame = new StrangeGame();
+
+    // 由於本次 Lab 不可使用 @InjectMocks ，所以說會在 @BeforeEach setUp 去做更改物件的行為。
+    private StrangeGame strangeGame;
 
     public static Collection inputBEnterGame() {
         return Arrays.asList(new Object[][]{
@@ -47,6 +48,14 @@ class StrangeGameTest {
                 {true, "Thank you"},
                 {false, "Some errors occurred"}
         });
+    }
+
+    @BeforeEach
+    void setUp() {
+        strangeGame = new StrangeGame();
+        strangeGame.hour = hour;
+        strangeGame.prison = prison;
+        strangeGame.db = gameDb;
     }
 
     @Test
