@@ -36,10 +36,11 @@ class StrangeGameTest {
         });
     }
 
+    // 直接使用 lambda 快速的實作一個可決定 return 的 fakePaypalService
     public static Collection inputEDonate() {
         return Arrays.asList(new Object[][]{
-                {true, "Thank you"},
-                {false, "Some errors occurred"}
+                {(paypalService) () -> "Success", "Thank you"},
+                {(paypalService) () -> "Unsuccessful", "Some errors occurred"}
         });
     }
 
@@ -86,21 +87,7 @@ class StrangeGameTest {
 
     @ParameterizedTest
     @MethodSource("inputEDonate")
-    void testEDonate(boolean isHaveMoney, String eReturn) {
-        assertEquals(eReturn, strangeGame.donate(new FakePaypalService(isHaveMoney)));
-    }
-
-    class FakePaypalService implements paypalService {
-
-        private boolean isHaveMoney;
-
-        public FakePaypalService(boolean isHaveMoney) {
-            this.isHaveMoney = isHaveMoney;
-        }
-
-        @Override
-        public String doDonate() {
-            return isHaveMoney ? "Success" : "Unsuccessful";
-        }
+    void testEDonate(paypalService fakePaypalService, String eReturn) {
+        assertEquals(eReturn, strangeGame.donate(fakePaypalService));
     }
 }
