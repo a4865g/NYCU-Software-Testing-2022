@@ -8,6 +8,7 @@
 0. [Overview](https://docs.google.com/presentation/d/10VCs6CK5rFEoDUkTcywiYNtI99tl83p6YqJ0nwiX1pw/edit?usp=sharing)
 1. [Basic Unit Testing](https://docs.google.com/presentation/d/1Z8DachhAxVFpnsYUW6IKm7Ir0a5qx6y18is1HR0ASCk/edit?usp=sharing)
 2. [Advanced Unit Testing](https://docs.google.com/presentation/d/1QhMJmfM4hXTcK89HjMJeo8-72Ur332Btfp0LA_M-9fw/edit?usp=sharing)
+3. [Continuous Integration](https://docs.google.com/presentation/d/1kavr_b94-IyxtMzuBwk0GXVF4LNfVq5tNXu-UAHYKls/edit?usp=sharing)
 
 ## Contact
 - Instructor
