@@ -10,6 +10,8 @@
 2. [Advanced Unit Testing](https://docs.google.com/presentation/d/1QhMJmfM4hXTcK89HjMJeo8-72Ur332Btfp0LA_M-9fw/edit?usp=sharing)
 3. [Continuous Integration](https://docs.google.com/presentation/d/1kavr_b94-IyxtMzuBwk0GXVF4LNfVq5tNXu-UAHYKls/edit?usp=sharing)
 
+- [Bug Report Example](https://docs.google.com/presentation/d/1YbFRvhIHYvh9BztIPHF9n7eGeOBr70XTqPKwqEpgjAQ/edit?usp=sharing)
+
 ## Contact
 - Instructor
    - 黃世昆 Shih-Kun Huang - skhuang[at]nycu.edu.tw
