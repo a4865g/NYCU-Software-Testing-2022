@@ -1,5 +1,6 @@
 # NYCU-Software-Testing-2022
 
+[![Build Workflow](https://github.com/t106362512/NYCU-Software-Testing-2022/actions/workflows/build.yml/badge.svg?event=push)](https://github.com/t106362512/NYCU-Software-Testing-2022/actions/workflows/build.yml)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=t106362512_NYCU-Software-Testing-2022&metric=bugs)](https://sonarcloud.io/summary/new_code?id=t106362512_NYCU-Software-Testing-2022)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=t106362512_NYCU-Software-Testing-2022&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=t106362512_NYCU-Software-Testing-2022)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=t106362512_NYCU-Software-Testing-2022&metric=coverage)](https://sonarcloud.io/summary/new_code?id=t106362512_NYCU-Software-Testing-2022)
