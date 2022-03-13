@@ -7,13 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Lab_2" />
         <module name="Lab_1" />
+        <module name="Lab_2" />
+        <module name="Lab_3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Lab_1" target="1.7" />
       <module name="Lab_2" target="8" />
+      <module name="Lab_3" target="9" />
       <module name="NYCU-Software-Testing-2022" target="11" />
     </bytecodeTargetLevel>
   </component>
