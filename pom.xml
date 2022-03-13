@@ -22,6 +22,7 @@
     <modules>
         <module>Lab_1</module>
         <module>Lab_2</module>
+        <module>Lab_3</module>
     </modules>
 
     <dependencies>
