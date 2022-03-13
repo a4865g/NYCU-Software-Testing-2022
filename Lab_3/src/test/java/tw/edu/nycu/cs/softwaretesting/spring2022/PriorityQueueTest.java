@@ -7,7 +7,6 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.List;
-import java.util.PriorityQueue;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -22,7 +21,7 @@ class PriorityQueueTest {
                 Arguments.of(new Object[]{-3, -1, -4, -2, 0}, new Object[]{-4, -3, -2, -1, 0}),
                 Arguments.of(new Object[]{"-3", "-1", "-4", "-2", "0"}, new Object[]{"-1", "-2", "-3", "-4", "0"}),
                 Arguments.of(new Object[]{"d", "a", "c", "e", "b"}, new Object[]{"a", "b", "c", "d", "e"}),
-                Arguments.of(new Object[]{'零', 'ㄧ', '二', '三', '四'}, new Object[]{'零', 'ㄧ', '二', '三', '四'})
+                Arguments.of(new Object[]{'零', 'ㄧ', '二', '三', '四'}, new Object[]{'ㄧ', '三', '二', '四', '零'})
         );
     }
 
