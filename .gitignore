@@ -246,4 +246,7 @@ Temporary Items
 ### GPG template
 secring.*
 
+# SonarLint
+.idea/sonarlint
+
 
