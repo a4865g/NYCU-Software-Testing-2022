@@ -12,6 +12,7 @@
 4. [Web Applications Testing](https://docs.google.com/presentation/d/1zNFFUNyyxJcMujhcbosDDZo4W6z7_EC6cjOxyjYACVg/edit?usp=sharing)
 
 - [Bug Report Example](https://docs.google.com/presentation/d/1YbFRvhIHYvh9BztIPHF9n7eGeOBr70XTqPKwqEpgjAQ/edit?usp=sharing)
+- [Submitting Patches](https://docs.google.com/presentation/d/1Evi58puo1B8rxpEVat4Os0zX-SIh36PQm3aTgOJAW9M/edit?usp=sharing)
 
 ## Contact
 - Instructor
