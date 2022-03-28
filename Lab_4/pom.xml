@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>tw.edu.nycu.cs.softwaretesting.spring2022</groupId>
+  <artifactId>Lab_4</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>Lab_4</name>
+
+  <parent>
+    <artifactId>NYCU-Software-Testing-2022</artifactId>
+    <groupId>tw.edu.nycu.cs.softwaretesting.spring2022</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>exec-maven-plugin</artifactId>
+      <version>3.0.0</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.0.0</version>
+        <executions>
+          <execution>
+            <configuration>
+              <executable>poetry</executable>
+              <arguments>
+                <argument>run</argument>
+                <argument>python</argument>
+                <argument>student_310551017.py</argument>
+              </arguments>
+            </configuration>
+            <id>python-build</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
