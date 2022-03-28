@@ -13,6 +13,16 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+      - uses: browser-actions/setup-firefox@latest
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - uses: abatilo/actions-poetry@v2.0.0
+        with:
+          poetry-version: 1.1.13
+      - name: Install python package by poetry
+        working-directory: ./Lab_4
+        run: poetry install
       - name: Set up JDK 11
         uses: actions/setup-java@v1
         with:
