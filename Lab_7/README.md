@@ -1,4 +1,4 @@
-# Lab 7: Fuzzing Test
+# Lab 7: Fuzz Testing
 1. We provide a small program that converts bmp from color to grayscale.
 	- Use **AFL++** to find the file that can trigger the vulnerability.
 	- Use **test.bmp** as init seed.
