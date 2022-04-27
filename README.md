@@ -13,6 +13,7 @@
 5. [LLVM Pass](https://docs.google.com/presentation/d/1el6sU4BIT3MGymi-CHaDVdE1zgJ5EpA9SKI2AesycLk/edit?usp=sharing)
 6. [Program Security Detect](https://docs.google.com/presentation/d/1PhOdlgPlBOJJcn5ACe6ejQjzfsgGczVvC17c6wM9R90/edit?usp=sharing)
 7. [Fuzz Testing](https://docs.google.com/presentation/d/1RA6vyMGy_sSBmiokmE1IfIDpRSxswpk53QjWquJh7wI/edit?usp=sharing)
+8. [Symbolic Execution](https://docs.google.com/presentation/d/1lj6rtEYomz5qnMZSsDFzkGEIsD_53hvQi1hEbz6-Sj0/edit?usp=sharing)
 
 - [Q&A I](https://docs.google.com/presentation/d/1rpDcPlaADQvvo_7HnDXiLcW38KxMVAkngNhRXvCaGQQ/edit?usp=sharing)
 
